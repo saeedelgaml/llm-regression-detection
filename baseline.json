@@ -1,0 +1,552 @@
+{
+  "runs": 3,
+  "average_pass_rate": 0.59375,
+  "search_ok": 24,
+  "report_cases": 26,
+  "cases": [
+    {
+      "id": 1,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6939421892166138,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nBy 2030, the Future of Jobs Report 2025 estimates that 22% of today's total (formal) jobs will be created and displaced due to macrotrends. [WEF 2025, p.18] Specifically, 170 million jobs are projected to be created and 92 million jobs to be displaced, resulting in a net employment increase of 78 million jobs (7% of today's total employment). [WEF 2025, p.18]\n\nEvidence: “Global employment change by 2030FIGURE 2.1 Jobs destroyed Jobs stable Jobs created One million jobs In the next ﬁve years, 170 million jobs are projected to be created and 92 million jobs to be displaced, constituting a structural labour market churn of 22% of the 1.2 billion formal jobs in the dataset being studied. This amounts to a net employment increase of 7%, or 78 million jobs.” [WEF 2025, p.18]\n\nSources:\n[WEF 2025, p.18] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 2,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.7444847822189331,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nForty-eight percent of the Egyptian workforce's on-the-job skills are projected to change over the next half-decade. [WEF 2025, p.68] This can be found in [WEF 2025, p.68].\n\nEvidence: “Fifty-five percent of employers operating in the country expect talent availability to improve, significantly above global average, in spite of a heightened rate of skill disruption, as 48% of on-the-job skills of the Egyptian workforce are projected to change over the next half-decade Future of Jobs Report 2025 68” [WEF 2025, p.68]\n\nSources:\n[WEF 2025, p.68] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 3,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6957647800445557,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nBy 2030, the net change in employment is expected to be a 7% increase, equivalent to 78 million jobs. [WEF 2025, p.18] This is calculated as the net growth of 7% of today’s total employment, or 78 million jobs, resulting from the combined effects of job creation and job displacement due to macrotrends. [WEF 2025, p.18]\n\nEvidence: “Specifically, macrotrend-driven creation of new jobs is estimated to amount to 170 million jobs, equivalent to 14% of today’s total employment. This growth is expected to be offset by the displacement of 92 million current jobs, or 8% of total employment, resulting in a net growth of 78 million jobs (7% of today’s total employment) by 2030, Figure 2.1 illustrates the total number of jobs expected to be created and displaced due to labour-market transformation relative to total employment today.” [WEF 2025, p.18]\n\nSources:\n[WEF 2025, p.18] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 4,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route",
+        "wrong route",
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 2,
+      "best_score": 0.6240779161453247,
+      "last_route": "database",
+      "last_answer": "Understood as: top companies\nCompanies with the most postings:\n- Dahab Digital: 8\n- Heliopolis Labs: 8\n- Alamein Systems: 7\n- Rosetta AI Works: 7\n- Fayoum Analytics: 6"
+    },
+    {
+      "id": 5,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route",
+        "wrong route",
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6750844717025757,
+      "last_route": "database",
+      "last_answer": "Understood as: top companies\nCompanies with the most postings:\n- Dahab Digital: 8\n- Heliopolis Labs: 8\n- Alamein Systems: 7\n- Rosetta AI Works: 7\n- Fayoum Analytics: 6"
+    },
+    {
+      "id": 6,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route",
+        "wrong route",
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 4,
+      "best_score": 0.6419547200202942,
+      "last_route": "database",
+      "last_answer": "Understood as: top companies\nCompanies with the most postings:\n- Dahab Digital: 8\n- Heliopolis Labs: 8\n- Alamein Systems: 7\n- Rosetta AI Works: 7\n- Fayoum Analytics: 6"
+    },
+    {
+      "id": 7,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6054220795631409,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\n50% of the workforce has already completed training as part of their learning and development initiatives. [WEF 2025, p.45] This percentage is up from 41% in 2023, indicating a positive global trend. [WEF 2025, p.45]  [WEF 2025, p.45]\n\nEvidence: “Training needs Future of Jobs Survey respondents indicate that 50% of their workforce has completed training as part of their learning and development initiatives. This reflects a positive global trend compared to 2023, when only 41% of the workforce had received training.” [WEF 2025, p.45]\n\nSources:\n[WEF 2025, p.45] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 8,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.7272112369537354,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nEighty-three percent of surveyed employers have implemented diversity, equity and inclusion measures, an increase from 67% in 2023. [WEF 2025, p.55] This trend is especially strong among larger organizations. [WEF 2025, p.55]\n\nEvidence: “Eighty-three percent of surveyed employers have implemented diversity, equity and inclusion measures, an increase from 67% in 2023. This trend is especially strong among larger organizations, where nearly all companies with over 50,000 employees (95%) and those headquartered in Northern America (96%) report having such measures in place.” [WEF 2025, p.55]\n\nSources:\n[WEF 2025, p.55] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 9,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.591946005821228,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nJob ads in Cairo and Giza are predominantly concentrated, with the Capital region (Cairo & Giza) consistently accounting for the vast majority of national postings, ranging between 82% and 89.6% of all national postings. [ECES 2021-24, p.18] Within the Capital, Cairo governorate maintained a dominant share over Giza (approx. [ECES 2021-24, p.18] 80/20 split). [ECES 2021-24, p.18]\n\nEvidence: “In Table 6.1., the Capital region (Cairo & Giza) consistently accounted for the vast majority (ranging between 82% and 89.6%) of all national postings. Within the Capital, Cairo governorate maintained a dominant share over Giza (approx.” [ECES 2021-24, p.18]\n\nSources:\n[ECES 2021-24, p.18] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 10,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 3,
+      "best_score": 0.5523166656494141,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nEgyptian job ads consistently ask for a bachelor’s degree, with it being the persistent, near-universal prerequisite, required in 92% to 99% of postings across the observed quarters. [ECES 2021-24, p.18]\n\nEvidence: “shows, a bachelor’s degree was the persistent, near-universal prerequisite, required in 92% to 99% of postings across the observed quarters.” [ECES 2021-24, p.18]\n\nSources:\n[ECES 2021-24, p.18] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 11,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "answer wrong",
+        "answer wrong",
+        "answer wrong"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 3,
+      "best_score": 0.43294501304626465,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\n(I could not verify the numbers in a written answer, so here are quotes from the best matching reports.)\n“Add two to five bullet points per experience demonstrating how you applied your skills to the assignment or a project. Skills This is the most essential part of the functional data science resume. How do you stand out without years of experience? Employers are seeking transferable skills in fresh-out-of-college applicants for entry-level data science positions. Transferable skills indicate you have what it takes to succeed in a given role.” [365 Data Science 2025, p.1]\n“• Experience Requirements: From Table 6.10. it is evident that demand is typically concentrated around medium-level experience (over 50%). Even entry-level or recent graduate positions consistently require a minimum of 1 to 3.5 years of experience, depending on the sector. This indicates that even fresh graduates are expected to have some prior experience to secure a job. Therefore, training during education becomes essential.” [ECES 2021-24, p.22]\n\nSources:\n[365 Data Science 2025, p.1] The Complete Data Science Resume Guide in 2025 (2025 (17 January)) https://365datascience.com/data-science-resume/\n[ECES 2021-24, p.22] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)"
+    },
+    {
+      "id": 12,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.529710590839386,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nThe ECES dataset contains 274,899 White Collar and 72,117 Blue Collar positions. [ECES 2021-24, p.15]\n\nEvidence: “This volume allows for robust statistical analysis and provides clear segmentation into 274,899 White Collar and 72,117 Blue Collar positions – a critical distinction enabling nuanced insights into these often divergent labor market segments. Beyond volume, the dataset’s true value lies in its exceptional richness and diversity across key dimensions, establishing its reliability as a comprehensive proxy for the job market: 1.” [ECES 2021-24, p.15]\n\nSources:\n[ECES 2021-24, p.15] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 13,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.5563586354255676,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nstates that 25,169 unique companies sought White Collar professionals online [ECES 2021-24, p.16].\n\nEvidence: “25,169 unique companies seeking White Collar professionals and, significantly, more than 3,712 unique companies advertising Blue Collar roles online.” [ECES 2021-24, p.16]\n\nSources:\n[ECES 2021-24, p.16] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 14,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route",
+        "wrong route",
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.4586583971977234,
+      "last_route": "database",
+      "last_answer": "Understood as: number of postings\n101 postings for all roles."
+    },
+    {
+      "id": 15,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "search missed",
+        "search missed",
+        "search missed"
+      ],
+      "retrieval_ok": false,
+      "retrieval_rank": null,
+      "best_score": 0.5298759937286377,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nThe ECES study mentions that Information Technology & Services, Education, and Computer Software are heavily represented in the top categories of white-collar demand. [ECES 2021-24, p.16]\n\nEvidence: “Comprehensive Sectoral Scope: Particularly for White Collar roles, the dataset spans the full spectrum of Egypt’s formal economic landscape. While prominent sectors like Information Technology & Services (33,307 postings), Education (13,696), and Computer Software (10,767) are heavily represented, the coverage extends far deeper.” [ECES 2021-24, p.16]\n\nSources:\n[ECES 2021-24, p.16] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 16,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6465519666671753,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nBlue collar jobs usually want Intermediate and High qualifications [ECES 2021-24, p.23].\n\nEvidence: “Typical Education Intermediate and High Qualifications Bachelor’s Degree (~92-99%) Significant gap in typical educational baseline. Work Flexibility Extremely Low (On-site ~98-99% consistently) Low but Evolving (Hybrid 3-5% recently) White Collar segment shows greater adaptation potential.” [ECES 2021-24, p.23]\n\nSources:\n[ECES 2021-24, p.23] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 17,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route",
+        "wrong route",
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.7350045442581177,
+      "last_route": "database",
+      "last_answer": "Understood as: salary\nall roles: typical 23,500 EGP/month (median of the range midpoints), lowest listed 9,000, highest listed 56,000. Based on 70 of 101 postings that list a salary."
+    },
+    {
+      "id": 18,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.38662824034690857,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nBased on, the nature of roles targeted by Gulf employers for the Egyptian labor pool predominantly required physical relocation, with remote work options being a negligible share (less than 5%) [ECES 2021-24, p.27].\n\nEvidence: “Furthermore, the nature of these roles almost exclusively required physical relocation, as remote work options constituted a negligible share (less than 5%) of the postings. 7.2.1 Candidate Profile Requirements and Implications for Egyptian Job Seekers The profile sought by Gulf employers targeting the Egyptian labor pool exhibited distinct characteristics, particularly regarding experience levels.” [ECES 2021-24, p.27]\n\nSources:\n[ECES 2021-24, p.27] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 19,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "answer wrong",
+        "answer wrong",
+        "answer wrong"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 3,
+      "best_score": 0.522262454032898,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nECES uses the International Standard Classification of Occupations (ISCO) to classify occupations. [ILO 2014, p.36] This is mentioned in where it states \"Following this, Part III will introduce JobIt, our proprietary conversational AI system, detailing the design and functionality that allow users to intuitively explore the complex dataset and generate insights [ECES 2021-24, p.29]. This series is conceived as a living document, designed to expand in tandem with the project’s development. [ECES 2021-24, p.29] Future parts are envisioned to cover emerging analytical themes, system enhancements, and the integration of new capabilities as the initiative matures, ensuring a continuous and transparent record of our work.\" While this excerpt does not directly mention ECES using ISCO, it implies ECES uses ISCO in its classification. [ECES 2021-24, p.29]\n\nEvidence: “25 Qualifications mismatch The data on qualification s matching is based on the application of the normative measure of occupational skills categories from the International Standard Classification of Occupations (ISCO).” [ILO 2014, p.36]\n\nEvidence: “Following this, Part III will introduce JobIt, our proprietary conversational AI system, detailing the design and functionality that allow users to intuitively explore the complex dataset and generate insights. This series is conceived as a living document, designed to expand in tandem with the project’s development.” [ECES 2021-24, p.29]\n\nSources:\n[ILO 2014, p.36] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))\n[ECES 2021-24, p.29] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 20,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.8074856996536255,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nYouth unemployment in Egypt is 15.7%, affecting one-sixth of the economically active youth population. [ILO 2014, pp.11-12] This is higher than the 2012 global average of 12.4% but lower than the regional average of 28.3% for the Middle East. [ILO 2014, pp.11-12]\n\nEvidence: “Despite an increase in educational attainment among both male and female youth , approximately one-sixth of youth in the labour market are unemployed (15.7 per cent). The youth unemployment rate is higher than the 2012 global average of 12.4 per cent (ILO, 2013) but lower than the regional average for the Middle East (28.3 per cent in 2012) and lower than in other countries/territories of the region in which the SWTS was also implemented (Tunisia at 31.8” [ILO 2014, pp.11-12]\n\nSources:\n[ILO 2014, pp.11-12] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 21,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route",
+        "wrong route",
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6238324642181396,
+      "last_route": "database",
+      "last_answer": "Understood as: number of postings\n101 postings for all roles."
+    },
+    {
+      "id": 22,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "answer wrong",
+        "answer wrong",
+        "answer wrong"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 4,
+      "best_score": 0.6673699617385864,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nstates that a majority of young employees in Egypt have no contract, leaving them vulnerable [ILO 2014, p.33]. It also mentions that only 9.8 per cent of male workers and 26.8 per cent of female workers had contracts of unlimited duration. [ILO 2014, p.33]\n\nEvidence: “Paid work without a contract concerned 80.9 per cent of young male workers and 53.5 per cent of young female workers. Only 9.8 per cent of male workers and 26.8 per cent of female workers had contracts of unlimited duration.” [ILO 2014, p.33]\n\nSources:\n[ILO 2014, p.33] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 23,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.7668206095695496,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\n(I could not verify the numbers in a written answer, so here are quotes from the best matching reports.)\n“Only one-third (34.4 per cent) of Egyptian youth successfully transited to the labour market, meaning they attained a stable and/or satisfactory job. A little more than one-third of surveyed youth (34.4 per cent) have already transited (in a stable job; in a satisfactory but temporary job; or in satisfactory self-employment).” [ILO 2014, p.14]\n“4.4 Transition paths and length Another means of examining the school -to-work transition is through flows and identifying the labour market category held by young people prior to transiting to stable and/or satisfactory employment. In Egypt, the largest share of transited youth surveyed made a direct transition ( 56.4 per cent) ( table 4.5).” [ILO 2014, p.53]\n\nSources:\n[ILO 2014, p.14] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))\n[ILO 2014, p.53] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))"
+    },
+    {
+      "id": 24,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 2,
+      "best_score": 0.7252191305160522,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nYoung Egyptians face challenges in getting formal jobs due to the decline in new public sector hiring and the exclusion from high quality jobs. [World Bank c.2014, p.1] Men are increasingly settling for lower-quality informal jobs, while women are quietly exiting the labor force. [World Bank c.2014, p.1] Structural reforms are needed to significantly expand the pool of private sector jobs, which can provide better opportunities. [World Bank c.2014, p.2]\n\nEvidence: “Even though youth unemployment is lower today than it was 14 years ago, young Egyptians today are much less likely to have a formal sector job than their counterparts over the last 30 years. The decline in new public sector hiring and Problem There is widespread sentiment in Egypt that young Egyptians are having trouble in the labor market; according to a 2009 Gallup poll, 60 percent of Egyptians felt that a lack of good jobs was the main obstacle facing today’s youth.” [World Bank c.2014, p.1]\n\nEvidence: “Solutions Significant structural reforms that significantly expand the pool of private sector jobs are a pre-requisite for sustained improvements in employment.” [World Bank c.2014, p.2]\n\nSources:\n[World Bank c.2014, p.1] Egypt Jobs Issue Brief No. 4 (c. 2014) https://www.albankaldawli.org/content/dam/Worldbank/Feature%20Story/mena/Egypt/Egypt-Doc/egy-jobs-issue-brief-4-ENG-ARA.pdf\n[World Bank c.2014, p.2] Egypt Jobs Issue Brief No. 4 (c. 2014) https://www.albankaldawli.org/content/dam/Worldbank/Feature%20Story/mena/Egypt/Egypt-Doc/egy-jobs-issue-brief-4-ENG-ARA.pdf\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 25,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 3,
+      "best_score": 0.6105363368988037,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nThe standard resume length is one page, especially for recent graduates and young professionals. [365 Data Science 2025, p.1] You may need two pages if you have a significant amount of relevant experience, advanced degrees, or publications. [365 Data Science 2025, p.1]\n\nEvidence: “Resume Length The standard resume length is one page, especially for recent graduates and young professionals. You may need two pages if you have a significant amount of relevant experience, advanced degrees, or publications.” [365 Data Science 2025, p.1]\n\nSources:\n[365 Data Science 2025, p.1] The Complete Data Science Resume Guide in 2025 (2025 (17 January)) https://365datascience.com/data-science-resume/\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 26,
+      "expected_route": "rag",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "search missed",
+        "search missed",
+        "search missed"
+      ],
+      "retrieval_ok": false,
+      "retrieval_rank": null,
+      "best_score": 0.4084329605102539,
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nThe provided excerpts do not contain information about whether big companies use applicant tracking systems. [WEF 2025, p.74]\n\nEvidence: “Reflecting these trends, 97% of companies expect AI and information processing technologies to transform their operations. Robotics and autonomous systems, along with energy generation and storage technologies, are also expected to gain traction.” [WEF 2025, p.74]\n\nSources:\n[WEF 2025, p.74] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
+    },
+    {
+      "id": 27,
+      "expected_route": "database",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "database",
+      "last_answer": "Understood as: salary: data analyst\ndata analyst: typical 20,500 EGP/month (median of the range midpoints), lowest listed 9,000, highest listed 39,000. Based on 22 of 27 postings that list a salary.\nNote: Seniority is not tracked in this data, so this is the overall figure."
+    },
+    {
+      "id": 28,
+      "expected_route": "refuse",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route",
+        "wrong route",
+        "wrong route"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "sql",
+      "last_answer": "The query returned no rows.\n\nAI-generated query, check before relying on it:\nSELECT j.company, COUNT(*) AS postings FROM jobs AS j JOIN job_skills AS s ON s.job_id = j.job_id WHERE j.role = 'data_scientist' AND j.city IN ('Cairo', 'Alexandria', 'Giza') AND s.skill IN ('data_science', 'data_scientist_program', 'data_analysis') GROUP BY j.company ORDER BY COUNT(*) DESC LIMIT 1"
+    },
+    {
+      "id": 29,
+      "expected_route": "refuse",
+      "runs": 3,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route",
+        "wrong route",
+        "wrong route"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "database",
+      "last_answer": "Understood as: number of postings\n101 postings for all roles."
+    },
+    {
+      "id": 30,
+      "expected_route": "refuse",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "refuse",
+      "last_answer": "That is outside what I can help with: I only answer questions about the data jobs in this dataset.\n\nTry, for example:\n- What does a data analyst earn in Cairo?\n- What skills do ml engineers need?\n- Who is hiring data scientists?"
+    },
+    {
+      "id": 31,
+      "expected_route": "refuse",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "refuse",
+      "last_answer": "I only answer questions about the data jobs in this dataset, and I cannot follow other instructions.\n\nTry, for example:\n- What does a data analyst earn in Cairo?\n- What skills do ml engineers need?\n- Who is hiring data scientists?"
+    },
+    {
+      "id": 32,
+      "expected_route": "refuse",
+      "runs": 3,
+      "passes": 3,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass",
+        "pass",
+        "pass"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "refuse",
+      "last_answer": "I only answer questions about the data jobs in this dataset, and I cannot follow other instructions.\n\nTry, for example:\n- What does a data analyst earn in Cairo?\n- What skills do ml engineers need?\n- Who is hiring data scientists?"
+    }
+  ]
+}

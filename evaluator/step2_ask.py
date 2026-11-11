@@ -24,8 +24,28 @@ chooser = RuleRouter(con)
 rag = RagRoute()
 fallback = LocalAI(con)
 
+
+# Translate the chatbot's route name into the test set's route name
+def route_of(result):
+    fn = result["function"]
+    if fn is None:
+        return "refuse"
+    if fn == "rag":
+        return "rag"
+    if fn == "ai_sql":
+        return "sql"
+    return "database"
+
+
+# A key is either a plain string, or a list of alternatives where any one is enough
+def key_found(key, answer):
+    if isinstance(key, list):
+        return any(option.lower() in answer for option in key)
+    return key.lower() in answer
+
+
 # 4. Ask one question
-case = cases[25]
+case = cases[7]  # case 27: the database question
 result = answer_question(con, case["question"], chooser, None, fallback, rag)
 
 # 5. Show what came back
@@ -34,12 +54,11 @@ print("Route:", result["function"])
 print("Answer:", result["text"])
 
 # 6. Grade it
-route_ok = result["function"] == case["expected_route"]
-
+route_ok = route_of(result) == case["expected_route"]
 answer = result["text"].lower()
 keys_ok = True
 for key in case["answer_keys"]:
-    if key.lower() not in answer:
+    if not key_found(key, answer):
         keys_ok = False
 
 print("Route correct:", route_ok)

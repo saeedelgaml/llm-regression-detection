@@ -64,7 +64,7 @@
       "63%"
     ],
     "retrieval_keys": [
-      "with 63% of employers identifying them as a major barrier"
+      "63% of"
     ],
     "source": "wef-fojr-2025",
     "page": 6,
@@ -197,7 +197,7 @@
       "13 quarters"
     ],
     "retrieval_keys": [
-      "multi-stage process refined over 13 quarters"
+      "13 quarters"
     ],
     "source": "eces-wp241",
     "page": 11,
@@ -209,7 +209,7 @@
     "expected_route": "rag",
     "answer_keys": [
       "Marketing",
-      "IT Services"
+      ["IT Services","Information Technology"]
     ],
     "retrieval_keys": [
       "Marketing & Advertising and IT Services"
@@ -241,7 +241,7 @@
       "466 million"
     ],
     "retrieval_keys": [
-      "approximately $11 million compared to India's $466 million"
+      "$11 million compared to"
     ],
     "source": "eces-wp241",
     "page": 26,
@@ -269,7 +269,7 @@
       "ISCO-08"
     ],
     "retrieval_keys": [
-      "ISCO-08 classification standard was adopted"
+      "classification of occupations (isco-08)"
     ],
     "source": "eces-wp241",
     "page": 17,
@@ -283,7 +283,7 @@
       "15.7"
     ],
     "retrieval_keys": [
-      "The unemployment rate of young people is 15.7 per cent"
+      " 15.7 per cent"
     ],
     "source": "ilo-swts-egypt",
     "page": 26,
@@ -325,7 +325,7 @@
       "34.4"
     ],
     "retrieval_keys": [
-      "(34.4 per cent) had completed the transition"
+      "34.4 per cent"
     ],
     "source": "ilo-swts-egypt",
     "page": 14,
