@@ -3,7 +3,7 @@
   "mode": "full",
   "skipped": [],
   "runs": 3,
-  "average_pass_rate": 0.71875,
+  "average_pass_rate": 0.78125,
   "search_ok": 24,
   "report_cases": 26,
   "cases": [
@@ -470,35 +470,35 @@
       "id": 28,
       "expected_route": "refuse",
       "runs": 3,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 3,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route",
-        "wrong route",
-        "wrong route"
+        "pass",
+        "pass",
+        "pass"
       ],
       "retrieval_ok": null,
       "retrieval_rank": null,
       "best_score": null,
-      "last_route": "sql",
-      "last_answer": "The query returned no rows.\n\nAI-generated query, check before relying on it:\nSELECT j.company, COUNT(*) AS postings FROM jobs AS j JOIN job_skills AS s ON s.job_id = j.job_id WHERE j.role = 'data_scientist' AND j.city IN ('Cairo', 'Alexandria', 'Giza') AND s.skill IN ('data_science', 'data_scientist_program', 'data_analysis') GROUP BY j.company ORDER BY COUNT(*) DESC LIMIT 1"
+      "last_route": "refuse",
+      "last_answer": "I do not have data about 'university' in the job postings, so I will not guess.\n\nTry, for example:\n- What does a data analyst earn in Cairo?\n- What skills do ml engineers need?\n- Who is hiring data scientists?"
     },
     {
       "id": 29,
       "expected_route": "refuse",
       "runs": 3,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 3,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route",
-        "wrong route",
-        "wrong route"
+        "pass",
+        "pass",
+        "pass"
       ],
       "retrieval_ok": null,
       "retrieval_rank": null,
       "best_score": null,
-      "last_route": "database",
-      "last_answer": "Understood as: number of postings\n101 postings for all roles."
+      "last_route": "refuse",
+      "last_answer": "The reports I have don't cover that, and the job postings in my data are synthetic, so I will not answer a question about a report from them.\n\nI can answer questions about new postings, salaries, top skills, skills that go with another skill, top companies, postings per city or role, posting counts and which role, city, company or skill pays the most. For example: \"What does a data analyst earn in Cairo?\", \"Which skills do data engineers need most?\" or \"Which city pays data engineers the most?\""
     },
     {
       "id": 30,
