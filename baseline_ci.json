@@ -1,0 +1,464 @@
+{
+  "adapter": "egypt_data_jobs",
+  "mode": "ci",
+  "skipped": [
+    25,
+    26
+  ],
+  "runs": 1,
+  "average_pass_rate": 0.6666666666666666,
+  "search_ok": 22,
+  "report_cases": 24,
+  "cases": [
+    {
+      "id": 1,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6939421892166138,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 2,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.7444848418235779,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 3,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6957647800445557,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 4,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6240779161453247,
+      "last_route": "database",
+      "last_answer": ""
+    },
+    {
+      "id": 5,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 2,
+      "best_score": 0.6750844120979309,
+      "last_route": "database",
+      "last_answer": ""
+    },
+    {
+      "id": 6,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 3,
+      "best_score": 0.6419547200202942,
+      "last_route": "database",
+      "last_answer": ""
+    },
+    {
+      "id": 7,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6054220795631409,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 8,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.7272112369537354,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 9,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.591946005821228,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 10,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 4,
+      "best_score": 0.5523166656494141,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 11,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 2,
+      "best_score": 0.4329450726509094,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 12,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.5297106504440308,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 13,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.5563585758209229,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 14,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.4586583971977234,
+      "last_route": "database",
+      "last_answer": ""
+    },
+    {
+      "id": 15,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "search missed"
+      ],
+      "retrieval_ok": false,
+      "retrieval_rank": null,
+      "best_score": 0.5298759937286377,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 16,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6465519666671753,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 17,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.7350045442581177,
+      "last_route": "database",
+      "last_answer": ""
+    },
+    {
+      "id": 18,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.3866282105445862,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 19,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 3,
+      "best_score": 0.522262454032898,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 20,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.8074856996536255,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 21,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.6238324642181396,
+      "last_route": "database",
+      "last_answer": ""
+    },
+    {
+      "id": 22,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "search missed"
+      ],
+      "retrieval_ok": false,
+      "retrieval_rank": null,
+      "best_score": 0.6673699617385864,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 23,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 1,
+      "best_score": 0.7668206095695496,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 24,
+      "expected_route": "rag",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": true,
+      "retrieval_rank": 2,
+      "best_score": 0.7252191305160522,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 27,
+      "expected_route": "database",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "database",
+      "last_answer": ""
+    },
+    {
+      "id": 28,
+      "expected_route": "refuse",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "rag",
+      "last_answer": ""
+    },
+    {
+      "id": 29,
+      "expected_route": "refuse",
+      "runs": 1,
+      "passes": 0,
+      "pass_rate": 0.0,
+      "diagnoses": [
+        "wrong route"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "database",
+      "last_answer": ""
+    },
+    {
+      "id": 30,
+      "expected_route": "refuse",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "refuse",
+      "last_answer": ""
+    },
+    {
+      "id": 31,
+      "expected_route": "refuse",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "refuse",
+      "last_answer": ""
+    },
+    {
+      "id": 32,
+      "expected_route": "refuse",
+      "runs": 1,
+      "passes": 1,
+      "pass_rate": 1.0,
+      "diagnoses": [
+        "pass"
+      ],
+      "retrieval_ok": null,
+      "retrieval_rank": null,
+      "best_score": null,
+      "last_route": "refuse",
+      "last_answer": ""
+    }
+  ]
+}

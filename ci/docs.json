@@ -1,0 +1,25 @@
+{
+  "_about": "Report files the CI job downloads into the chatbot's rag/docs/ before building the search index. sha256 makes sure CI uses exactly the files the CI baseline was made with. 365ds-resume-guide.txt is not here: it was copied by hand from a web page, so it is never published; golden cases that need it are marked local_only.",
+  "docs": [
+    {
+      "filename": "wef-fojr-2025.pdf",
+      "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+      "sha256": "f25987c0dee6eba2d832f80924b0e926a4705605cbd6a5c5f10323897da31271"
+    },
+    {
+      "filename": "eces-wp241.pdf",
+      "url": "https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf",
+      "sha256": "6999ad3ddd672a1170513de7c588750d1514c12904bc63388033f8c57ce6e23a"
+    },
+    {
+      "filename": "ilo-swts-egypt.pdf",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@dgreports/@dcomm/documents/publication/wcms_247596.pdf",
+      "sha256": "87da672b660c5308c0bb3f436a638ad89c72812b277a7c5d5e37ab13b655022d"
+    },
+    {
+      "filename": "wb-egypt-brief4.pdf",
+      "url": "https://www.albankaldawli.org/content/dam/Worldbank/Feature%20Story/mena/Egypt/Egypt-Doc/egy-jobs-issue-brief-4-ENG-ARA.pdf",
+      "sha256": "d4326b513ac170670025436ad095d2c3394fb63638b8e18438e23c69bd48a3b7"
+    }
+  ]
+}

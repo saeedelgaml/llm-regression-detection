@@ -359,7 +359,8 @@
     ],
     "source": "365ds-resume-guide",
     "page": null,
-    "type": "fact"
+    "type": "fact",
+    "local_only": true
   },
   {
     "id": 26,
@@ -373,7 +374,8 @@
     ],
     "source": "365ds-resume-guide",
     "page": null,
-    "type": "known weak spot"
+    "type": "known weak spot",
+    "local_only": true
   },
   {
     "id": 27,
