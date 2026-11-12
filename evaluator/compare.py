@@ -1,95 +1,96 @@
+"""Compare a run with the baseline and give a verdict (exit code 1 = regression).
+
+    python evaluator/compare.py                         # newest run of the baseline's adapter vs baseline.json
+    python evaluator/compare.py results/run_X.json      # a chosen run vs baseline.json
+    python evaluator/compare.py results/run_X.json other_baseline.json
+
+Exit codes: 0 = OK, 1 = REGRESSION, 2 = cannot compare (no run, or a different adapter).
+"""
 import json
 import sys
 from pathlib import Path
 
-TOLERANCE = 0.05  # allowed drop in the average pass rate (5 points)
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from evaluator.checks import TOLERANCE, compare_runs
 
 
 def load(path):
-    with open(path, encoding="utf-8") as f:
-        data = json.load(f)
-    return data, {case["id"]: case for case in data["cases"]}
+    return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def newest_run():
-    files = sorted(Path("results").glob("run_*.json"), key=lambda p: p.stat().st_mtime)
-    if not files:
-        sys.exit("No run files found in results/. Run evaluator\\run_eval.py first.")
-    return files[-1]
+def same_kind(run, baseline):
+    """A run may only be compared with a baseline of the same adapter (and the same mode)."""
+    return run.get("adapter") == baseline.get("adapter") and run.get("mode", "full") == baseline.get("mode", "full")
 
 
-def average(by_id, ids):
-    return sum(by_id[i]["pass_rate"] for i in ids) / len(ids)
+def newest_run(baseline, folder="results"):
+    """The newest results/run_*.json made with the baseline's adapter and mode (other runs are ignored)."""
+    files = sorted(Path(folder).glob("run_*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
+    for f in files:
+        if same_kind(load(f), baseline):
+            return f
+    return None
 
 
-def main_reason(case):
-    bad = [d for d in case.get("diagnoses", []) if d != "pass"]
-    return max(set(bad), key=bad.count) if bad else "unknown"
+def describe(data):
+    return f"adapter={data.get('adapter', '?')}, mode={data.get('mode', 'full')}"
 
 
-# 1. Which two report cards to compare
-current_path = Path(sys.argv[1]) if len(sys.argv) > 1 else newest_run()
-baseline_path = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("baseline.json")
+def print_report(result, base_path, base_data, cur_path, cur_data):
+    print(f"Baseline: {base_path}  ({describe(base_data)}, {base_data['runs']} run(s) per case, {result['base_avg']:.1%})")
+    print(f"Current:  {cur_path}  ({describe(cur_data)}, {cur_data['runs']} run(s) per case, {result['cur_avg']:.1%})")
+    if result["missing"]:
+        print(f"Note: the current run has {len(result['shared'])} of {len(base_data['cases'])} baseline cases; "
+              f"comparing those only (missing: {result['missing']}).")
+    print(f"Change in average pass rate: {(result['cur_avg'] - result['base_avg']) * 100:+.1f} points "
+          f"(allowed drop: {result['tolerance'] * 100:.0f})")
+    print()
+    print(f"Got worse ({len(result['worse'])}):")
+    for w in result["worse"]:
+        print(f"  Case {w['id']}: {w['before']:.0%} -> {w['after']:.0%}  (main problem now: {w['reason']})")
+    if not result["worse"]:
+        print("  none")
+    print(f"Got better ({len(result['better'])}):")
+    for b in result["better"]:
+        print(f"  Case {b['id']}: {b['before']:.0%} -> {b['after']:.0%}")
+    if not result["better"]:
+        print("  none")
+    print(f"Search stopped finding the passage: {result['search_lost'] or 'none'}")
+    print(f"Search now finds the passage:       {result['search_gained'] or 'none'}")
+    print()
+    if result["regression"]:
+        print("VERDICT: REGRESSION DETECTED")
+        for problem in result["problems"]:
+            print(" -", problem)
+    else:
+        print("VERDICT: OK - no regression against the baseline")
 
-base_data, base = load(baseline_path)
-cur_data, cur = load(current_path)
 
-# 2. Compare only the cases both runs contain
-shared = sorted(set(base) & set(cur))
-if len(shared) < len(base):
-    print(f"Note: the current run has {len(shared)} of {len(base)} baseline cases; comparing those only.")
+def main(argv=None):
+    sys.stdout.reconfigure(encoding="utf-8")
+    argv = sys.argv[1:] if argv is None else argv
+    base_path = Path(argv[1]) if len(argv) > 1 else ROOT / "baseline.json"
+    base_data = load(base_path)
 
-base_avg = average(base, shared)
-cur_avg = average(cur, shared)
-drop = base_avg - cur_avg
+    if argv:
+        cur_path = Path(argv[0])
+    else:
+        cur_path = newest_run(base_data)
+        if cur_path is None:
+            print(f"No run in results/ for {describe(base_data)}. Run evaluator/run_eval.py first.")
+            return 2
+    cur_data = load(cur_path)
 
-print(f"Baseline: {baseline_path}  ({base_data['runs']} run(s) per case, {base_avg:.1%})")
-print(f"Current:  {current_path}  ({cur_data['runs']} run(s) per case, {cur_avg:.1%})")
-print(f"Change in average pass rate: {(cur_avg - base_avg) * 100:+.1f} points (allowed drop: {TOLERANCE * 100:.0f})")
-print()
+    if not same_kind(cur_data, base_data):
+        print(f"Cannot compare: the run is {describe(cur_data)} but the baseline is {describe(base_data)}.")
+        return 2
 
-# 3. Case by case
-worse, better, broken = [], [], []
-for i in shared:
-    b, c = base[i]["pass_rate"], cur[i]["pass_rate"]
-    if c < b:
-        worse.append(i)
-        if b == 1.0 and c == 0.0:
-            broken.append(i)
-    elif c > b:
-        better.append(i)
+    result = compare_runs(base_data, cur_data, TOLERANCE)
+    print_report(result, base_path, base_data, cur_path, cur_data)
+    return 1 if result["regression"] else 0
 
-print(f"Got worse ({len(worse)}):")
-for i in worse:
-    print(f"  Case {i}: {base[i]['pass_rate']:.0%} -> {cur[i]['pass_rate']:.0%}  (main problem now: {main_reason(cur[i])})")
-if not worse:
-    print("  none")
 
-print(f"Got better ({len(better)}):")
-for i in better:
-    print(f"  Case {i}: {base[i]['pass_rate']:.0%} -> {cur[i]['pass_rate']:.0%}")
-if not better:
-    print("  none")
-
-# 4. Search changes (deterministic, so any change is a real signal)
-search_lost = [i for i in shared if base[i].get("retrieval_ok") is True and cur[i].get("retrieval_ok") is False]
-search_gained = [i for i in shared if base[i].get("retrieval_ok") is False and cur[i].get("retrieval_ok") is True]
-print(f"Search stopped finding the passage: {search_lost or 'none'}")
-print(f"Search now finds the passage:       {search_gained or 'none'}")
-
-# 5. Verdict
-problems = []
-if drop > TOLERANCE:
-    problems.append(f"average pass rate fell by {drop * 100:.1f} points (allowed: {TOLERANCE * 100:.0f})")
-if broken:
-    problems.append(f"cases that passed every baseline run now fail every run: {broken}")
-if search_lost:
-    problems.append(f"search stopped finding the right passage in cases {search_lost}")
-
-print()
-if problems:
-    print("VERDICT: REGRESSION DETECTED")
-    for problem in problems:
-        print(" -", problem)
-    sys.exit(1)
-print("VERDICT: OK - no regression against the baseline")
+if __name__ == "__main__":
+    sys.exit(main())

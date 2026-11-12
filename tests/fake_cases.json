@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of Egypt?",
+    "expected_route": "rag",
+    "answer_keys": ["Cairo"],
+    "retrieval_keys": [],
+    "type": "fake: should pass"
+  },
+  {
+    "id": 2,
+    "question": "How many days are in a week?",
+    "expected_route": "rag",
+    "answer_keys": [["7", "seven"]],
+    "retrieval_keys": [],
+    "type": "fake: should pass (either-or key)"
+  },
+  {
+    "id": 3,
+    "question": "What colour is the sky on a clear day?",
+    "expected_route": "rag",
+    "answer_keys": ["blue"],
+    "retrieval_keys": [],
+    "type": "fake: fails on purpose"
+  }
+]

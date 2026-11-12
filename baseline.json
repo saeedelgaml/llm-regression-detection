@@ -1,4 +1,6 @@
 {
+  "adapter": "egypt_data_jobs",
+  "mode": "full",
   "runs": 3,
   "average_pass_rate": 0.59375,
   "search_ok": 24,
