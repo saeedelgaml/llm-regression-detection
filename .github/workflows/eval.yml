@@ -8,6 +8,8 @@
 # the route each golden question takes and whether search finds the right passage.
 # It compares them with baseline_ci.json and fails (blocking the deploy) on a regression,
 # and then posts the failed cases with their diagnosis labels to Discord.
+# Only when the gate passes, it builds a report page (artifact "eval-report") that the
+# caller's deploy job publishes to GitHub Pages. A CI regression gate, not full CD.
 name: LLM regression gate
 
 on:
@@ -82,6 +84,16 @@ jobs:
       - name: Regression gate (compare with baseline_ci.json)
         working-directory: evaluator
         run: python evaluator/compare.py results/run_ci.json baseline_ci.json --summary-out results/verdict.json
+
+      - name: Build the report page (only reached when the gate passed)
+        working-directory: evaluator
+        run: python evaluator/report.py results/run_ci.json results/verdict.json --out results/report/index.html
+
+      - name: Hand the report page to the deploy job
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: evaluator/results/report/
 
       - name: Alert on Discord (regression found)
         if: failure() && hashFiles('evaluator/results/verdict.json') != ''
