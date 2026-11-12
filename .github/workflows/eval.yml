@@ -6,7 +6,8 @@
 #
 # GitHub's servers have no Ollama, so this job checks only the deterministic parts:
 # the route each golden question takes and whether search finds the right passage.
-# It compares them with baseline_ci.json and fails (blocking the deploy) on a regression.
+# It compares them with baseline_ci.json and fails (blocking the deploy) on a regression,
+# and then posts the failed cases with their diagnosis labels to Discord.
 name: LLM regression gate
 
 on:
@@ -16,6 +17,10 @@ on:
         description: Branch or tag of llm-regression-detection to use (keep it the same as the @ref in "uses:")
         type: string
         default: main
+    secrets:
+      DISCORD_WEBHOOK_URL:
+        description: Discord channel webhook for the failure alert (optional; without it the alert is only printed)
+        required: false
 
 permissions:
   contents: read
@@ -76,7 +81,21 @@ jobs:
 
       - name: Regression gate (compare with baseline_ci.json)
         working-directory: evaluator
-        run: python evaluator/compare.py results/run_ci.json baseline_ci.json
+        run: python evaluator/compare.py results/run_ci.json baseline_ci.json --summary-out results/verdict.json
+
+      - name: Alert on Discord (regression found)
+        if: failure() && hashFiles('evaluator/results/verdict.json') != ''
+        working-directory: evaluator
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python evaluator/alert.py results/verdict.json
+
+      - name: Alert on Discord (the gate could not run)
+        if: failure() && hashFiles('evaluator/results/verdict.json') == ''
+        working-directory: evaluator
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python evaluator/alert.py --gate-did-not-run
 
       - name: Keep the report card
         if: always()

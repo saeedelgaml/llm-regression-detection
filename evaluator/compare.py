@@ -3,9 +3,11 @@
     python evaluator/compare.py                         # newest run of the baseline's adapter vs baseline.json
     python evaluator/compare.py results/run_X.json      # a chosen run vs baseline.json
     python evaluator/compare.py results/run_X.json other_baseline.json
+    python evaluator/compare.py results/run_X.json baseline_ci.json --summary-out results/verdict.json
 
 Exit codes: 0 = OK, 1 = REGRESSION, 2 = cannot compare (no run, or a different adapter).
 """
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -68,14 +70,34 @@ def print_report(result, base_path, base_data, cur_path, cur_data):
         print("VERDICT: OK - no regression against the baseline")
 
 
+def write_summary(path, result, base_path, base_data, cur_path, cur_data):
+    """The verdict as JSON, for the alert (evaluator/alert.py) and the report page."""
+    summary = {
+        "verdict": "REGRESSION" if result["regression"] else "OK",
+        "adapter": cur_data.get("adapter"),
+        "mode": cur_data.get("mode", "full"),
+        "baseline": str(base_path),
+        "current": str(cur_path),
+        "skipped": cur_data.get("skipped", []),
+        **result,
+    }
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def main(argv=None):
     sys.stdout.reconfigure(encoding="utf-8")
-    argv = sys.argv[1:] if argv is None else argv
-    base_path = Path(argv[1]) if len(argv) > 1 else ROOT / "baseline.json"
+    p = argparse.ArgumentParser(description="Compare a run with the baseline.")
+    p.add_argument("current", nargs="?", help="run file (default: newest run of the baseline's adapter)")
+    p.add_argument("baseline", nargs="?", default=str(ROOT / "baseline.json"))
+    p.add_argument("--summary-out", help="also save the verdict as JSON here")
+    args = p.parse_args(argv)
+    base_path = Path(args.baseline)
     base_data = load(base_path)
 
-    if argv:
-        cur_path = Path(argv[0])
+    if args.current:
+        cur_path = Path(args.current)
     else:
         cur_path = newest_run(base_data)
         if cur_path is None:
@@ -89,6 +111,8 @@ def main(argv=None):
 
     result = compare_runs(base_data, cur_data, TOLERANCE)
     print_report(result, base_path, base_data, cur_path, cur_data)
+    if args.summary_out:
+        write_summary(args.summary_out, result, base_path, base_data, cur_path, cur_data)
     return 1 if result["regression"] else 0
 
 
