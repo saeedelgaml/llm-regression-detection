@@ -1,8 +1,9 @@
 {
   "adapter": "egypt_data_jobs",
   "mode": "full",
+  "skipped": [],
   "runs": 3,
-  "average_pass_rate": 0.59375,
+  "average_pass_rate": 0.71875,
   "search_ok": 24,
   "report_cases": 26,
   "cases": [
@@ -61,18 +62,18 @@
       "id": 4,
       "expected_route": "rag",
       "runs": 3,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 3,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route",
-        "wrong route",
-        "wrong route"
+        "pass",
+        "pass",
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 2,
       "best_score": 0.6240779161453247,
-      "last_route": "database",
-      "last_answer": "Understood as: top companies\nCompanies with the most postings:\n- Dahab Digital: 8\n- Heliopolis Labs: 8\n- Alamein Systems: 7\n- Rosetta AI Works: 7\n- Fayoum Analytics: 6"
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nAnalytical thinking remains the most sought-after core skill among employers, with seven out of 10 companies considering it as essential in 2025. [WEF 2025, p.6] This is followed by resilience, flexibility and agility, along with leadership and social influence. [WEF 2025, p.35]  [WEF 2025, p.6]\n\nEvidence: “– Analytical thinking remains the most soughtafter core skill among employers, with seven out of 10 companies considering it as essential in 2025.” [WEF 2025, p.6]\n\nEvidence: “This is followed by resilience, flexibility and agility, along with leadership and social influence, underscoring the critical role of adaptability and collaboration alongside cognitive skills.” [WEF 2025, p.35]\n\nSources:\n[WEF 2025, p.35] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n[WEF 2025, p.6] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 5,
@@ -81,32 +82,32 @@
       "passes": 0,
       "pass_rate": 0.0,
       "diagnoses": [
-        "wrong route",
-        "wrong route",
-        "wrong route"
+        "answer wrong",
+        "answer wrong",
+        "answer wrong"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 1,
       "best_score": 0.6750844717025757,
-      "last_route": "database",
-      "last_answer": "Understood as: top companies\nCompanies with the most postings:\n- Dahab Digital: 8\n- Heliopolis Labs: 8\n- Alamein Systems: 7\n- Rosetta AI Works: 7\n- Fayoum Analytics: 6"
+      "last_route": "rag",
+      "last_answer": "From the reports\n\n71% of employers in Brazil say skill gaps are the biggest barrier to transforming their business. [WEF 2025, p.73]\n\nEvidence: “Skills gaps in the labour market are seen as a key barrier to transformation by two-thirds of companies operating in the country, followed by organizational culture and resistance to change. To improve talent availability, 71% of employers suggest considering more flexible policies regarding hiring and firing, while 50% point to reforming immigration laws.” [WEF 2025, p.73]\n\nSources:\n[WEF 2025, p.73] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 6,
       "expected_route": "rag",
       "runs": 3,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 3,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route",
-        "wrong route",
-        "wrong route"
+        "pass",
+        "pass",
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 4,
       "best_score": 0.6419547200202942,
-      "last_route": "database",
-      "last_answer": "Understood as: top companies\nCompanies with the most postings:\n- Dahab Digital: 8\n- Heliopolis Labs: 8\n- Alamein Systems: 7\n- Rosetta AI Works: 7\n- Fayoum Analytics: 6"
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nThe Future of Jobs Survey was conducted by the World Economic Forum, which brought together the perspectives of more than 1,000 global employers, collectively employing more than 14.1 million workers across 22 industry clusters and 55 economies. [WEF 2025, p.9]\n\nEvidence: “based on the World Economic Forum’s Future of Jobs Survey, conducted in late 2024, which brings together the perspectives of more than 1,000 global employers, collectively employing more than 14.1 million workers across 22 industry clusters and 55 economies.” [WEF 2025, p.9]\n\nSources:\n[WEF 2025, p.9] The Future of Jobs Report 2025 (2025 (January)) https://www.weforum.org/publications/the-future-of-jobs-report-2025/\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 7,
@@ -157,7 +158,7 @@
       "retrieval_rank": 1,
       "best_score": 0.591946005821228,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nJob ads in Cairo and Giza are predominantly concentrated, with the Capital region (Cairo & Giza) consistently accounting for the vast majority of national postings, ranging between 82% and 89.6% of all national postings. [ECES 2021-24, p.18] Within the Capital, Cairo governorate maintained a dominant share over Giza (approx. [ECES 2021-24, p.18] 80/20 split). [ECES 2021-24, p.18]\n\nEvidence: “In Table 6.1., the Capital region (Cairo & Giza) consistently accounted for the vast majority (ranging between 82% and 89.6%) of all national postings. Within the Capital, Cairo governorate maintained a dominant share over Giza (approx.” [ECES 2021-24, p.18]\n\nSources:\n[ECES 2021-24, p.18] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nJob ads in Cairo and Giza are predominantly concentrated, with the Capital region (Cairo & Giza) consistently accounting for the vast majority of national postings, ranging between 82% and 89.6% of all national postings. [ECES 2021-24, p.18] Within the Capital, Cairo governorate maintained a dominant share over Giza (approx. [ECES 2021-24, p.18] 80/20 split). [ECES 2021-24, p.18]\n\nEvidence: “In Table 6.1., the Capital region (Cairo & Giza) consistently accounted for the vast majority (ranging between 82% and 89.6%) of all national postings. Within the Capital, Cairo governorate maintained a dominant share over Giza (approx.” [ECES 2021-24, p.18]\n\nSources:\n[ECES 2021-24, p.18] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 10,
@@ -174,7 +175,7 @@
       "retrieval_rank": 3,
       "best_score": 0.5523166656494141,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nEgyptian job ads consistently ask for a bachelor’s degree, with it being the persistent, near-universal prerequisite, required in 92% to 99% of postings across the observed quarters. [ECES 2021-24, p.18]\n\nEvidence: “shows, a bachelor’s degree was the persistent, near-universal prerequisite, required in 92% to 99% of postings across the observed quarters.” [ECES 2021-24, p.18]\n\nSources:\n[ECES 2021-24, p.18] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nEgyptian job ads consistently ask for a bachelor’s degree, with it being the persistent, near-universal prerequisite, required in 92% to 99% of postings across the observed quarters. [ECES 2021-24, p.18]\n\nEvidence: “shows, a bachelor’s degree was the persistent, near-universal prerequisite, required in 92% to 99% of postings across the observed quarters.” [ECES 2021-24, p.18]\n\nSources:\n[ECES 2021-24, p.18] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 11,
@@ -191,7 +192,7 @@
       "retrieval_rank": 3,
       "best_score": 0.43294501304626465,
       "last_route": "rag",
-      "last_answer": "From the reports\n\n(I could not verify the numbers in a written answer, so here are quotes from the best matching reports.)\n“Add two to five bullet points per experience demonstrating how you applied your skills to the assignment or a project. Skills This is the most essential part of the functional data science resume. How do you stand out without years of experience? Employers are seeking transferable skills in fresh-out-of-college applicants for entry-level data science positions. Transferable skills indicate you have what it takes to succeed in a given role.” [365 Data Science 2025, p.1]\n“• Experience Requirements: From Table 6.10. it is evident that demand is typically concentrated around medium-level experience (over 50%). Even entry-level or recent graduate positions consistently require a minimum of 1 to 3.5 years of experience, depending on the sector. This indicates that even fresh graduates are expected to have some prior experience to secure a job. Therefore, training during education becomes essential.” [ECES 2021-24, p.22]\n\nSources:\n[365 Data Science 2025, p.1] The Complete Data Science Resume Guide in 2025 (2025 (17 January)) https://365datascience.com/data-science-resume/\n[ECES 2021-24, p.22] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)"
+      "last_answer": "From the reports\n\n(I could not verify the numbers in a written answer, so here are quotes from the best matching reports.)\n“Add two to five bullet points per experience demonstrating how you applied your skills to the assignment or a project. Skills This is the most essential part of the functional data science resume. How do you stand out without years of experience? Employers are seeking transferable skills in fresh-out-of-college applicants for entry-level data science positions. Transferable skills indicate you have what it takes to succeed in a given role.” [365 Data Science 2025, p.1]\n“• Experience Requirements: From Table 6.10. it is evident that demand is typically concentrated around medium-level experience (over 50%). Even entry-level or recent graduate positions consistently require a minimum of 1 to 3.5 years of experience, depending on the sector. This indicates that even fresh graduates are expected to have some prior experience to secure a job. Therefore, training during education becomes essential.” [ECES 2021-24, p.22]\n\nSources:\n[365 Data Science 2025, p.1] The Complete Data Science Resume Guide in 2025 (2025 (17 January)) https://365datascience.com/data-science-resume/\n[ECES 2021-24, p.22] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf"
     },
     {
       "id": 12,
@@ -208,7 +209,7 @@
       "retrieval_rank": 1,
       "best_score": 0.529710590839386,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nThe ECES dataset contains 274,899 White Collar and 72,117 Blue Collar positions. [ECES 2021-24, p.15]\n\nEvidence: “This volume allows for robust statistical analysis and provides clear segmentation into 274,899 White Collar and 72,117 Blue Collar positions – a critical distinction enabling nuanced insights into these often divergent labor market segments. Beyond volume, the dataset’s true value lies in its exceptional richness and diversity across key dimensions, establishing its reliability as a comprehensive proxy for the job market: 1.” [ECES 2021-24, p.15]\n\nSources:\n[ECES 2021-24, p.15] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nThe ECES dataset contains 274,899 White Collar and 72,117 Blue Collar positions. [ECES 2021-24, p.15]\n\nEvidence: “This volume allows for robust statistical analysis and provides clear segmentation into 274,899 White Collar and 72,117 Blue Collar positions – a critical distinction enabling nuanced insights into these often divergent labor market segments. Beyond volume, the dataset’s true value lies in its exceptional richness and diversity across key dimensions, establishing its reliability as a comprehensive proxy for the job market: 1.” [ECES 2021-24, p.15]\n\nSources:\n[ECES 2021-24, p.15] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 13,
@@ -225,24 +226,24 @@
       "retrieval_rank": 1,
       "best_score": 0.5563586354255676,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nstates that 25,169 unique companies sought White Collar professionals online [ECES 2021-24, p.16].\n\nEvidence: “25,169 unique companies seeking White Collar professionals and, significantly, more than 3,712 unique companies advertising Blue Collar roles online.” [ECES 2021-24, p.16]\n\nSources:\n[ECES 2021-24, p.16] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nstates that 25,169 unique companies sought White Collar professionals online [ECES 2021-24, p.16].\n\nEvidence: “25,169 unique companies seeking White Collar professionals and, significantly, more than 3,712 unique companies advertising Blue Collar roles online.” [ECES 2021-24, p.16]\n\nSources:\n[ECES 2021-24, p.16] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 14,
       "expected_route": "rag",
       "runs": 3,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 3,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route",
-        "wrong route",
-        "wrong route"
+        "pass",
+        "pass",
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 1,
       "best_score": 0.4586583971977234,
-      "last_route": "database",
-      "last_answer": "Understood as: number of postings\n101 postings for all roles."
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nThe ECES study covers data from 13 quarters, specifically from Q4 2021 through Q4 2024. [ECES 2021-24, p.2]\n\nEvidence: “Abstract Egypt’s chronic skills mismatch is intensified by a critical lack of data on labor market demand. To address this, the Egyptian Center for Economic Studies (ECES) has developed a novel system to analyze online job postings (OJPs) using AI, refined over 13 quarters (Q4 2021–Q4 2024).” [ECES 2021-24, p.2]\n\nSources:\n[ECES 2021-24, p.2] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 15,
@@ -259,7 +260,7 @@
       "retrieval_rank": null,
       "best_score": 0.5298759937286377,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nThe ECES study mentions that Information Technology & Services, Education, and Computer Software are heavily represented in the top categories of white-collar demand. [ECES 2021-24, p.16]\n\nEvidence: “Comprehensive Sectoral Scope: Particularly for White Collar roles, the dataset spans the full spectrum of Egypt’s formal economic landscape. While prominent sectors like Information Technology & Services (33,307 postings), Education (13,696), and Computer Software (10,767) are heavily represented, the coverage extends far deeper.” [ECES 2021-24, p.16]\n\nSources:\n[ECES 2021-24, p.16] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nThe ECES study mentions that Information Technology & Services, Education, and Computer Software are heavily represented in the top categories of white-collar demand. [ECES 2021-24, p.16]\n\nEvidence: “Comprehensive Sectoral Scope: Particularly for White Collar roles, the dataset spans the full spectrum of Egypt’s formal economic landscape. While prominent sectors like Information Technology & Services (33,307 postings), Education (13,696), and Computer Software (10,767) are heavily represented, the coverage extends far deeper.” [ECES 2021-24, p.16]\n\nSources:\n[ECES 2021-24, p.16] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 16,
@@ -276,7 +277,7 @@
       "retrieval_rank": 1,
       "best_score": 0.6465519666671753,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nBlue collar jobs usually want Intermediate and High qualifications [ECES 2021-24, p.23].\n\nEvidence: “Typical Education Intermediate and High Qualifications Bachelor’s Degree (~92-99%) Significant gap in typical educational baseline. Work Flexibility Extremely Low (On-site ~98-99% consistently) Low but Evolving (Hybrid 3-5% recently) White Collar segment shows greater adaptation potential.” [ECES 2021-24, p.23]\n\nSources:\n[ECES 2021-24, p.23] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nBlue collar jobs usually want Intermediate and High qualifications [ECES 2021-24, p.23].\n\nEvidence: “Typical Education Intermediate and High Qualifications Bachelor’s Degree (~92-99%) Significant gap in typical educational baseline. Work Flexibility Extremely Low (On-site ~98-99% consistently) Low but Evolving (Hybrid 3-5% recently) White Collar segment shows greater adaptation potential.” [ECES 2021-24, p.23]\n\nSources:\n[ECES 2021-24, p.23] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 17,
@@ -285,15 +286,15 @@
       "passes": 0,
       "pass_rate": 0.0,
       "diagnoses": [
-        "wrong route",
-        "wrong route",
-        "wrong route"
+        "answer wrong",
+        "answer wrong",
+        "answer wrong"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 1,
       "best_score": 0.7350045442581177,
-      "last_route": "database",
-      "last_answer": "Understood as: salary\nall roles: typical 23,500 EGP/month (median of the range midpoints), lowest listed 9,000, highest listed 56,000. Based on 70 of 101 postings that list a salary."
+      "last_route": "rag",
+      "last_answer": "From the reports\n\nEgyptian freelancers demonstrated high technical competence (95.4% success rate, comparable to India’s), while there was a stark difference in aggregate earnings. [ECES 2021-24, pp.24-25]\n\nEvidence: “7.1.2 Egypt’s Performance and Comparison with India While Egyptian freelancers demonstrated high technical competence (95.4% success rate, comparable to India’s), there was a stark difference in aggregate earnings.” [ECES 2021-24, pp.24-25]\n\nSources:\n[ECES 2021-24, pp.24-25] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 18,
@@ -310,7 +311,7 @@
       "retrieval_rank": 1,
       "best_score": 0.38662824034690857,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nBased on, the nature of roles targeted by Gulf employers for the Egyptian labor pool predominantly required physical relocation, with remote work options being a negligible share (less than 5%) [ECES 2021-24, p.27].\n\nEvidence: “Furthermore, the nature of these roles almost exclusively required physical relocation, as remote work options constituted a negligible share (less than 5%) of the postings. 7.2.1 Candidate Profile Requirements and Implications for Egyptian Job Seekers The profile sought by Gulf employers targeting the Egyptian labor pool exhibited distinct characteristics, particularly regarding experience levels.” [ECES 2021-24, p.27]\n\nSources:\n[ECES 2021-24, p.27] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nBased on, the nature of roles targeted by Gulf employers for the Egyptian labor pool predominantly required physical relocation, with remote work options being a negligible share (less than 5%) [ECES 2021-24, p.27].\n\nEvidence: “Furthermore, the nature of these roles almost exclusively required physical relocation, as remote work options constituted a negligible share (less than 5%) of the postings. 7.2.1 Candidate Profile Requirements and Implications for Egyptian Job Seekers The profile sought by Gulf employers targeting the Egyptian labor pool exhibited distinct characteristics, particularly regarding experience levels.” [ECES 2021-24, p.27]\n\nSources:\n[ECES 2021-24, p.27] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 19,
@@ -327,7 +328,7 @@
       "retrieval_rank": 3,
       "best_score": 0.522262454032898,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nECES uses the International Standard Classification of Occupations (ISCO) to classify occupations. [ILO 2014, p.36] This is mentioned in where it states \"Following this, Part III will introduce JobIt, our proprietary conversational AI system, detailing the design and functionality that allow users to intuitively explore the complex dataset and generate insights [ECES 2021-24, p.29]. This series is conceived as a living document, designed to expand in tandem with the project’s development. [ECES 2021-24, p.29] Future parts are envisioned to cover emerging analytical themes, system enhancements, and the integration of new capabilities as the initiative matures, ensuring a continuous and transparent record of our work.\" While this excerpt does not directly mention ECES using ISCO, it implies ECES uses ISCO in its classification. [ECES 2021-24, p.29]\n\nEvidence: “25 Qualifications mismatch The data on qualification s matching is based on the application of the normative measure of occupational skills categories from the International Standard Classification of Occupations (ISCO).” [ILO 2014, p.36]\n\nEvidence: “Following this, Part III will introduce JobIt, our proprietary conversational AI system, detailing the design and functionality that allow users to intuitively explore the complex dataset and generate insights. This series is conceived as a living document, designed to expand in tandem with the project’s development.” [ECES 2021-24, p.29]\n\nSources:\n[ILO 2014, p.36] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))\n[ECES 2021-24, p.29] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024)\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nECES uses the International Standard Classification of Occupations (ISCO) to classify occupations. [ILO 2014, p.36] This is mentioned in where it states \"Following this, Part III will introduce JobIt, our proprietary conversational AI system, detailing the design and functionality that allow users to intuitively explore the complex dataset and generate insights [ECES 2021-24, p.29]. This series is conceived as a living document, designed to expand in tandem with the project’s development. [ECES 2021-24, p.29] Future parts are envisioned to cover emerging analytical themes, system enhancements, and the integration of new capabilities as the initiative matures, ensuring a continuous and transparent record of our work.\" While this excerpt does not directly mention ECES using ISCO, it implies ECES uses ISCO in its classification. [ECES 2021-24, p.29]\n\nEvidence: “25 Qualifications mismatch The data on qualification s matching is based on the application of the normative measure of occupational skills categories from the International Standard Classification of Occupations (ISCO).” [ILO 2014, p.36]\n\nEvidence: “Following this, Part III will introduce JobIt, our proprietary conversational AI system, detailing the design and functionality that allow users to intuitively explore the complex dataset and generate insights. This series is conceived as a living document, designed to expand in tandem with the project’s development.” [ECES 2021-24, p.29]\n\nSources:\n[ILO 2014, p.36] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012)) https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@dgreports/@dcomm/documents/publication/wcms_247596.pdf\n[ECES 2021-24, p.29] ECES Working Paper 241: Egyptian online job postings (data Q4 2021 - Q4 2024) https://eces.org.eg/wp-content/uploads/2025/07/W-P-En-241.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 20,
@@ -344,24 +345,24 @@
       "retrieval_rank": 1,
       "best_score": 0.8074856996536255,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nYouth unemployment in Egypt is 15.7%, affecting one-sixth of the economically active youth population. [ILO 2014, pp.11-12] This is higher than the 2012 global average of 12.4% but lower than the regional average of 28.3% for the Middle East. [ILO 2014, pp.11-12]\n\nEvidence: “Despite an increase in educational attainment among both male and female youth , approximately one-sixth of youth in the labour market are unemployed (15.7 per cent). The youth unemployment rate is higher than the 2012 global average of 12.4 per cent (ILO, 2013) but lower than the regional average for the Middle East (28.3 per cent in 2012) and lower than in other countries/territories of the region in which the SWTS was also implemented (Tunisia at 31.8” [ILO 2014, pp.11-12]\n\nSources:\n[ILO 2014, pp.11-12] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nYouth unemployment in Egypt is 15.7%, affecting one-sixth of the economically active youth population. [ILO 2014, pp.11-12] This is higher than the 2012 global average of 12.4% but lower than the regional average of 28.3% for the Middle East. [ILO 2014, pp.11-12]\n\nEvidence: “Despite an increase in educational attainment among both male and female youth , approximately one-sixth of youth in the labour market are unemployed (15.7 per cent). The youth unemployment rate is higher than the 2012 global average of 12.4 per cent (ILO, 2013) but lower than the regional average for the Middle East (28.3 per cent in 2012) and lower than in other countries/territories of the region in which the SWTS was also implemented (Tunisia at 31.8” [ILO 2014, pp.11-12]\n\nSources:\n[ILO 2014, pp.11-12] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012)) https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@dgreports/@dcomm/documents/publication/wcms_247596.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 21,
       "expected_route": "rag",
       "runs": 3,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 3,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route",
-        "wrong route",
-        "wrong route"
+        "pass",
+        "pass",
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 1,
       "best_score": 0.6238324642181396,
-      "last_route": "database",
-      "last_answer": "Understood as: number of postings\n101 postings for all roles."
+      "last_route": "rag",
+      "last_answer": "From the reports\n\n(I could not verify the numbers in a written answer, so here are quotes from the best matching reports.)\n“In Egypt, almost one -half of working youth (47.7 per cent) are in occupations that do not match their education: 8.8 per cent are ove reducated and 38.9 per cent are undereducated. The consequence of overeducation is that young worker s performing a job below their level of educational qualification are likely to earn less than they otherwise could and are not making the most of their productive potential.” [ILO 2014, p.14]\n“The overeducated are mainly found in clerical positions (43.2 per cent of young clerks are overeducated) or in elementary occupations (59.9 per cent). It is likely that many of the overeducated are taking up these jobs as an alternative to une mployment when they are unable to find a job that better matches their level of education.” [ILO 2014, p.37]\n\nSources:\n[ILO 2014, p.14] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012)) https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@dgreports/@dcomm/documents/publication/wcms_247596.pdf\n[ILO 2014, p.37] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012)) https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@dgreports/@dcomm/documents/publication/wcms_247596.pdf"
     },
     {
       "id": 22,
@@ -378,7 +379,7 @@
       "retrieval_rank": 4,
       "best_score": 0.6673699617385864,
       "last_route": "rag",
-      "last_answer": "From the reports\n\nstates that a majority of young employees in Egypt have no contract, leaving them vulnerable [ILO 2014, p.33]. It also mentions that only 9.8 per cent of male workers and 26.8 per cent of female workers had contracts of unlimited duration. [ILO 2014, p.33]\n\nEvidence: “Paid work without a contract concerned 80.9 per cent of young male workers and 53.5 per cent of young female workers. Only 9.8 per cent of male workers and 26.8 per cent of female workers had contracts of unlimited duration.” [ILO 2014, p.33]\n\nSources:\n[ILO 2014, p.33] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))\n\n(answer written by qwen2.5:3b, running locally)"
+      "last_answer": "From the reports\n\nstates that a majority of young employees in Egypt have no contract, leaving them vulnerable [ILO 2014, p.33]. It also mentions that only 9.8 per cent of male workers and 26.8 per cent of female workers had contracts of unlimited duration. [ILO 2014, p.33]\n\nEvidence: “Paid work without a contract concerned 80.9 per cent of young male workers and 53.5 per cent of young female workers. Only 9.8 per cent of male workers and 26.8 per cent of female workers had contracts of unlimited duration.” [ILO 2014, p.33]\n\nSources:\n[ILO 2014, p.33] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012)) https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@dgreports/@dcomm/documents/publication/wcms_247596.pdf\n\n(answer written by qwen2.5:3b, running locally)"
     },
     {
       "id": 23,
@@ -395,7 +396,7 @@
       "retrieval_rank": 1,
       "best_score": 0.7668206095695496,
       "last_route": "rag",
-      "last_answer": "From the reports\n\n(I could not verify the numbers in a written answer, so here are quotes from the best matching reports.)\n“Only one-third (34.4 per cent) of Egyptian youth successfully transited to the labour market, meaning they attained a stable and/or satisfactory job. A little more than one-third of surveyed youth (34.4 per cent) have already transited (in a stable job; in a satisfactory but temporary job; or in satisfactory self-employment).” [ILO 2014, p.14]\n“4.4 Transition paths and length Another means of examining the school -to-work transition is through flows and identifying the labour market category held by young people prior to transiting to stable and/or satisfactory employment. In Egypt, the largest share of transited youth surveyed made a direct transition ( 56.4 per cent) ( table 4.5).” [ILO 2014, p.53]\n\nSources:\n[ILO 2014, p.14] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))\n[ILO 2014, p.53] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012))"
+      "last_answer": "From the reports\n\n(I could not verify the numbers in a written answer, so here are quotes from the best matching reports.)\n“Only one-third (34.4 per cent) of Egyptian youth successfully transited to the labour market, meaning they attained a stable and/or satisfactory job. A little more than one-third of surveyed youth (34.4 per cent) have already transited (in a stable job; in a satisfactory but temporary job; or in satisfactory self-employment).” [ILO 2014, p.14]\n“4.4 Transition paths and length Another means of examining the school -to-work transition is through flows and identifying the labour market category held by young people prior to transiting to stable and/or satisfactory employment. In Egypt, the largest share of transited youth surveyed made a direct transition ( 56.4 per cent) ( table 4.5).” [ILO 2014, p.53]\n\nSources:\n[ILO 2014, p.14] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012)) https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@dgreports/@dcomm/documents/publication/wcms_247596.pdf\n[ILO 2014, p.53] Labour market transitions of young women and men in Egypt (Work4Youth No. 16) (2014 (survey from 2012)) https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@dgreports/@dcomm/documents/publication/wcms_247596.pdf"
     },
     {
       "id": 24,

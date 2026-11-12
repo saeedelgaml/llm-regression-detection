@@ -19,7 +19,7 @@ DB_PATH = Path(os.environ.get("EGYPT_CHATBOT_DB", CHATBOT_DIR / "data" / "jobs.d
 sys.path.insert(0, str(CHATBOT_DIR))
 
 import duckdb
-from chatbot.ai import answer_question
+from chatbot.ai import answer_question, reports_first
 from chatbot.local_ai import BLOCKED, LocalAI
 from chatbot.rag_route import RagRoute
 from chatbot.router import RuleRouter
@@ -79,6 +79,6 @@ def route(question):
     choice = chooser(question)
     if choice.get("function") is None:
         return "rag" if _reports_would_answer(question) else "refuse"
-    if choice.get("last_resort") and _reports_would_answer(question):
+    if reports_first(chooser, question, choice) and _reports_would_answer(question):
         return "rag"
     return "database"

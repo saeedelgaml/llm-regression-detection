@@ -6,7 +6,7 @@
     26
   ],
   "runs": 1,
-  "average_pass_rate": 0.6666666666666666,
+  "average_pass_rate": 0.8666666666666667,
   "search_ok": 22,
   "report_cases": 24,
   "cases": [
@@ -59,45 +59,45 @@
       "id": 4,
       "expected_route": "rag",
       "runs": 1,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 1,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route"
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 1,
       "best_score": 0.6240779161453247,
-      "last_route": "database",
+      "last_route": "rag",
       "last_answer": ""
     },
     {
       "id": 5,
       "expected_route": "rag",
       "runs": 1,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 1,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route"
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 2,
       "best_score": 0.6750844120979309,
-      "last_route": "database",
+      "last_route": "rag",
       "last_answer": ""
     },
     {
       "id": 6,
       "expected_route": "rag",
       "runs": 1,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 1,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route"
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 3,
       "best_score": 0.6419547200202942,
-      "last_route": "database",
+      "last_route": "rag",
       "last_answer": ""
     },
     {
@@ -209,15 +209,15 @@
       "id": 14,
       "expected_route": "rag",
       "runs": 1,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 1,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route"
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 1,
       "best_score": 0.4586583971977234,
-      "last_route": "database",
+      "last_route": "rag",
       "last_answer": ""
     },
     {
@@ -254,15 +254,15 @@
       "id": 17,
       "expected_route": "rag",
       "runs": 1,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 1,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route"
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 1,
       "best_score": 0.7350045442581177,
-      "last_route": "database",
+      "last_route": "rag",
       "last_answer": ""
     },
     {
@@ -314,15 +314,15 @@
       "id": 21,
       "expected_route": "rag",
       "runs": 1,
-      "passes": 0,
-      "pass_rate": 0.0,
+      "passes": 1,
+      "pass_rate": 1.0,
       "diagnoses": [
-        "wrong route"
+        "pass"
       ],
       "retrieval_ok": true,
       "retrieval_rank": 1,
       "best_score": 0.6238324642181396,
-      "last_route": "database",
+      "last_route": "rag",
       "last_answer": ""
     },
     {
@@ -412,7 +412,7 @@
       "retrieval_ok": null,
       "retrieval_rank": null,
       "best_score": null,
-      "last_route": "database",
+      "last_route": "rag",
       "last_answer": ""
     },
     {
